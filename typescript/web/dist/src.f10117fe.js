@@ -431,7 +431,7 @@ var UserEdit = /*#__PURE__*/function (_View_1$View) {
   }, {
     key: "template",
     value: function template() {
-      return "\n        <div>\n         <div class=\"user-show></div>\n         <div class=\"user-form></div>\n         </div>\n        ";
+      return "\n        <div>\n         <div class=\"user-show\"></div>\n         <div class=\"user-form\"></div>\n         </div>\n        ";
     }
   }]);
 
