@@ -22,7 +22,7 @@ function bodyValidators(keys) {
         for (var _i = 0, keys_1 = keys; _i < keys_1.length; _i++) {
             var key = keys_1[_i];
             if (!req.body[key]) {
-                res.status(422).send("Missing property " + key);
+                res.status(422).send("Missing property ".concat(key));
                 return;
             }
         }
@@ -42,7 +42,7 @@ function controller(routePrefix) {
                 [];
             var validator = bodyValidators(requiredBodyProps);
             if (path) {
-                router[method].apply(router, __spreadArray(__spreadArray(["" + routePrefix + path], middlewares, false), [validator,
+                router[method].apply(router, __spreadArray(__spreadArray(["".concat(routePrefix).concat(path)], middlewares, false), [validator,
                     routeHandler], false));
             }
         }
